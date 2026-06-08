@@ -1,3 +1,83 @@
+/* ═══════════════════════
+   PRELOADER
+══════════════════════════ */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.preloader-logo-wrap {
+  position: relative;
+  width: 110px;
+  height: 110px;
+}
+
+.preloader-logo-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.preloader-logo-bg {
+  opacity: 0.12;
+  filter: grayscale(1) brightness(2);
+}
+
+.preloader-logo-fill {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.08s linear;
+}
+
+.preloader-name-wrap {
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 0.25em;
+  line-height: 1;
+  user-select: none;
+}
+
+.preloader-name-bg {
+  color: rgba(255, 255, 255, 0.12);
+  display: block;
+}
+
+.preloader-name-fill {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.08s linear;
+  white-space: nowrap;
+}
+
+.preloader-percent {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.9rem;
+  color: #F77F00;
+  letter-spacing: 0.2em;
+}
+
 body {
     background-color: white;
     font-family: "Bebas Neue", sans-serif;

@@ -1,3 +1,38 @@
+// ======= PRELOADER =======
+(function () {
+  let loaded = document.readyState === 'complete';
+  if (!loaded) window.addEventListener('load', () => { loaded = true; });
+
+  function setProgress(p) {
+    const inv = 100 - p;
+    const logoFill = document.querySelector('.preloader-logo-fill');
+    const nameFill = document.querySelector('.preloader-name-fill');
+    const pct      = document.querySelector('.preloader-percent');
+    if (logoFill) logoFill.style.clipPath = `inset(${inv}% 0 0 0)`;
+    if (nameFill) nameFill.style.clipPath = `inset(0 ${inv}% 0 0)`;
+    if (pct)      pct.textContent = Math.round(p) + '%';
+  }
+
+  let sim = 0;
+  const iv = setInterval(() => {
+    if (loaded && sim >= 99) {
+      clearInterval(iv);
+      setProgress(100);
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('fade-out');
+          setTimeout(() => preloader.remove(), 750);
+        }
+      }, 350);
+    } else {
+      sim += (loaded ? 4 : (90 - sim) * 0.045 + 0.4);
+      sim = Math.min(sim, loaded ? 100 : 90);
+      setProgress(sim);
+    }
+  }, 40);
+})();
+
 // ======= CUSTOM CURSOR =======
 (function () {
   const dot  = document.createElement('div');
