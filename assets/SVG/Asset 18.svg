@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.75 121.46">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path d="M61.18,3.28c.19,0,.39,0,.58,0,14.25.31,25.71,11.92,25.71,26.2s-11.45,25.89-25.71,26.2c-.19,0-.39,0-.58,0" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="6.55"/>
+        <path d="M61.18,68.78c.2,0,.39,0,.58,0,.11,0,.23,0,.34-.01,14.1-.45,25.37-11.3,25.37-24.62,0-2.59-.43-5.08-1.21-7.42h0" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="6.55"/>
+        <path d="M62.01,16.37c.09,0,.17,0,.26,0,6.25.15,11.28,5.96,11.28,13.1s-5.03,12.95-11.28,13.1c-.09,0-.17,0-.26,0" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="6.55"/>
+        <path d="M61.18,29.47c.09,0,.17,0,.26,0,4.41.11,8.2,3.02,10.06,7.24" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="6.55"/>
+        <rect x="0" y="0" width="61.18" height="6.55" fill="#fff"/>
+        <rect x="13.1" y="13.1" width="48.92" height="6.55" fill="#fff"/>
+        <rect x="26.18" y="26.2" width="35" height="6.55" fill="#fff"/>
+        <rect x="26.18" y="39.31" width="35.83" height="6.55" fill="#fff"/>
+        <rect x="-1.27" y="7.71" width="24.51" height="6.55" transform="translate(10.98 -4.55) rotate(45)" fill="#fff"/>
+        <polygon points="13.11 121.4 0 110.89 4.63 107.18 17.74 117.69 13.11 121.4" fill="#fff"/>
+        <rect x="13.1" y="116.15" width="19.63" height="5.25" fill="#fff"/>
+        <rect x="26.18" y="52.4" width="35" height="6.55" fill="#fff"/>
+        <rect x="26.18" y="65.5" width="35" height="6.55" fill="#fff"/>
+        <rect width="6.55" height="110.88" fill="#fff"/>
+        <rect x="13.1" y="15.24" width="6.55" height="104.28" fill="#fff"/>
+        <rect x="26.18" y="26.2" width="6.55" height="32.76" fill="#fff"/>
+        <rect x="26.18" y="54.54" width="6.55" height="64.23" fill="#fff"/>
+        <polygon points="44.06 66.5 58.21 111.63 51.96 113.62 37.81 68.49 44.06 66.5" fill="#fff"/>
+        <polygon points="62.16 121.46 51.96 113.62 55.94 108.37 66.14 116.2 62.16 121.46" fill="#fff"/>
+        <polygon points="87.7 118.55 87.7 118.86 87.69 121.41 62.15 121.45 62.17 114.86 77.26 114.83 86.18 114.82 87.7 118.55" fill="#fff"/>
+        <polygon points="57.72 66.68 73.59 117.34 67.35 119.33 51.47 68.67 57.72 66.68" fill="#fff"/>
+        <polygon points="87.7 118.51 87.62 118.54 81.49 120.49 79.62 114.54 65.74 70.4 71.96 68.41 86.45 114.52 87.62 118.23 87.7 118.51" fill="#fff"/>
+      </g>
+      <rect x="55.24" y="13.37" width="9.47" height="5.69" fill="#fff"/>
+    </g>
+  </g>
+</svg>
