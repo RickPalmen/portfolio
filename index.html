@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rick Palmen — Visual Designer</title>
+<meta name="description" content="Rick Palmen — Visual designer working across branding, UI/UX and multimedia storytelling.">
+<link rel="icon" type="image/svg+xml" href="assets/SVG/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@0;1&family=Inter:ital,wght@0,300..800;1,300..800&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════ CURSOR ═══════════════════════ -->
+<div class="cursor-cross" id="cursorCross">
+  <span></span><span></span>
+</div>
+
+<!-- ═══════════════════════ PRELOADER ═══════════════════════ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-row">
+    <span class="preloader-name">RICK PALMEN</span>
+    <span class="preloader-pct" id="preloaderPct">00</span>
+  </div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+</div>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark" data-target="top">RP<span>&#9679;</span></a>
+  <div class="nav-links">
+    <a href="#about" data-target="about">About</a>
+    <a href="#journey" data-target="journey">Journey</a>
+    <a href="#work" data-target="work">Work</a>
+    <a href="#skills" data-target="skills">Skills</a>
+    <a href="#gallery" data-target="gallery">Gallery</a>
+    <a href="#contact" data-target="contact">Contact</a>
+  </div>
+  <a href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer" class="nav-cta">
+    <span>Say hi</span><i class="fa-solid fa-arrow-up-right"></i>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span></button>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<header class="hero" id="top">
+  <div class="hero-frame">
+    <span class="hero-frame-corner tl"></span>
+    <span class="hero-frame-corner tr"></span>
+    <span class="hero-frame-corner bl"></span>
+    <span class="hero-frame-corner br"></span>
+  </div>
+
+  <div class="hero-top-row reveal-line">
+    <span>Portfolio&nbsp;/&nbsp;2026</span>
+    <span>Limburg, NL</span>
+  </div>
+
+  <div class="hero-title-wrap">
+    <h1 class="hero-title">
+      <span class="hero-title-line"><span class="hero-title-inner" data-line>Rick</span></span>
+      <span class="hero-title-line"><span class="hero-title-inner" data-line>Palmen</span></span>
+    </h1>
+  </div>
+
+  <div class="hero-bottom-row">
+    <p class="hero-role reveal-line">Visual designer — branding, UI/UX &amp;<br>multimedia storytelling.</p>
+    <a href="#about" class="hero-scroll" data-target="about">
+      <span class="hero-scroll-circle"><i class="fa-solid fa-arrow-down"></i></span>
+      <span class="hero-scroll-label">Scroll</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════ 01 — ABOUT ═══════════════════════ -->
+<section class="about" id="about">
+  <div class="section-head reveal">
+    <span class="section-num">01</span>
+    <span class="section-name">About</span>
+  </div>
+
+  <div class="about-grid">
+    <p class="about-lede reveal">
+      Minimal, but <em>purposeful</em>. I bring ideas to life through bold, deliberate design that looks sharp, feels right, and leaves a lasting impression — every project is a small chapter in a bigger story I'm still writing.
+    </p>
+
+    <div class="about-photo reveal">
+      <img src="assets/me2.jpg" alt="Rick Palmen">
+    </div>
+
+    <div class="about-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="10">00</span>
+        <span class="stat-label">Projects<br>shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Tools<br>mastered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num stat-infinity">&#8734;</span>
+        <span class="stat-label">Creativity,<br>always</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 02 — JOURNEY ═══════════════════════ -->
+<section class="journey" id="journey">
+  <div class="section-head section-head--dark reveal">
+    <span class="section-num">02</span>
+    <span class="section-name">Journey</span>
+  </div>
+
+  <h2 class="journey-headline reveal">Big cities. Visual harmony.<br><em>Bold ideas.</em></h2>
+
+  <div class="journey-body">
+    <div class="journey-photo reveal">
+      <img src="assets/me.jpg" alt="Rick Palmen">
+      <a class="photo-tag" href="https://www.instagram.com/rick_palmen/" target="_blank" rel="noopener noreferrer">
+        <span class="photo-tag-dot"></span>
+        <span class="photo-tag-label">@rick_palmen</span>
+      </a>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-row reveal">
+        <span class="timeline-index">01</span>
+        <span class="timeline-title">23 years old</span>
+        <p>A designer drawn to clean, fitting aesthetics and bold type. Calm by nature, curious by habit.</p>
+      </li>
+      <li class="timeline-row reveal">
+        <span class="timeline-index">02</span>
+        <span class="timeline-title">Energy in the details</span>
+        <p>I find energy in big cities, matching colour palettes, and the details most people overlook.</p>
+      </li>
+      <li class="timeline-row reveal">
+        <span class="timeline-index">03</span>
+        <span class="timeline-title">Quiet observer</span>
+        <p>Calm and introverted by nature — I like to take my time to observe, think, and create.</p>
+      </li>
+      <li class="timeline-row reveal">
+        <span class="timeline-index">04</span>
+        <span class="timeline-title">Chronically online</span>
+        <p>Saving inspiration, chasing new interests, staying endlessly plugged into what's next.</p>
+      </li>
+      <li class="timeline-row reveal">
+        <span class="timeline-index">05</span>
+        <span class="timeline-title">Still growing</span>
+        <p>My dad always told me to do what I love and work hard for it. I carry that with me, every project.</p>
+      </li>
+    </ol>
+  </div>
+
+  <div class="traits reveal">
+    <span>Visual Designer</span><span>Problem Solver</span><span>Student</span><span>Introvert</span>
+    <span>City Dweller</span><span>Chronically Online</span><span>Clean Aesthetics</span><span>Creative Thinker</span><span>Stressproof</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 03 — WORK ═══════════════════════ -->
+<section class="work" id="work">
+  <div class="section-head reveal">
+    <span class="section-num">03</span>
+    <span class="section-name">Work</span>
+  </div>
+
+  <h2 class="work-headline reveal">Brand concepts,<br><em>brought to life</em>.</h2>
+  <p class="work-sub reveal">Hover to explore. Click a case study below to read the story.</p>
+
+  <div class="concepts-row" id="conceptsRow">
+    <div class="concept-tile reveal" data-tilt>
+      <img src="assets/Modexa1.jpg" class="img-a" alt="Modexa">
+      <img src="assets/Modexa2.png" class="img-b" alt="Modexa">
+      <span class="concept-name">Modexa</span>
+    </div>
+    <div class="concept-tile reveal" data-tilt>
+      <img src="assets/Solavena1.png" class="img-a" alt="Solavena">
+      <img src="assets/Solavena2.png" class="img-b" alt="Solavena">
+      <span class="concept-name">Solavena</span>
+    </div>
+    <a class="concept-tile concept-tile--dl reveal" data-tilt href="assets/S%26A%20Brandbook.pdf" download="S&amp;A Brandbook.pdf">
+      <img src="assets/S&A1.png" class="img-a" alt="S&amp;A">
+      <img src="assets/S&A2.png" class="img-b" alt="S&amp;A">
+      <span class="concept-dl"><i class="fa-solid fa-file-arrow-down"></i> Brandbook</span>
+      <span class="concept-name">S&amp;A</span>
+    </a>
+    <div class="concept-tile concept-tile--logo reveal" data-tilt>
+      <img src="assets/dsm logo.png" class="img-a" alt="dsm-firmenich">
+      <img src="assets/dsm tabel.png" class="img-b" alt="dsm-firmenich sustainability data">
+      <span class="concept-tag">sustainabilitydata</span>
+      <span class="concept-name">dsm&#8209;firmenich</span>
+    </div>
+  </div>
+
+  <div class="rule reveal"><span>Real&#8209;life projects</span></div>
+
+  <div class="case-wrap">
+    <div class="case-grid" id="caseGrid">
+      <article class="case-card reveal" data-case="ads" tabindex="0" role="button" aria-label="Read the Achter de Schermen case study">
+        <div class="case-img"><img src="assets/Achter De Schermen.png" alt="Achter de Schermen"></div>
+        <div class="case-copy">
+          <h3>Achter de Schermen</h3>
+          <p>Turning CBS raw-material datasets into an interactive multimedia story for a 16–18 audience.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="animo" tabindex="0" role="button" aria-label="Read the Animo case study">
+        <div class="case-img"><img src="assets/animo.png" alt="Animo"></div>
+        <div class="case-copy">
+          <h3>Animo</h3>
+          <p>A reading-app concept for Cubiss — teens discover the books their idols grew up on.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="safari" tabindex="0" role="button" aria-label="Read the Coding Safari case study">
+        <div class="case-img"><img src="assets/codesafari.png" alt="Coding Safari"></div>
+        <div class="case-copy">
+          <h3>Coding Safari</h3>
+          <p>Workshops that introduce teenagers to code as a creative outlet, not just a technical skill.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="hein" tabindex="0" role="button" aria-label="Read the Hein's Multimedia Story case study">
+        <div class="case-img"><img src="assets/Hein.png" alt="Hein's Multimedia Story"></div>
+        <div class="case-copy">
+          <h3>Hein's Multimedia Story</h3>
+          <p>Mapping Dutch &amp; Belgian beer exports into an immersive, data-driven narrative.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card case-card--wide reveal" data-case="zuyderland" tabindex="0" role="button" aria-label="Read the Zuyderland case study">
+        <div class="case-img case-img--logo"><img src="assets/Zuyderland logo.png" alt="Zuyderland"></div>
+        <div class="case-copy">
+          <h3>Zuyderland</h3>
+          <p>An in-room treatment-light &amp; ambiance system giving hospital patients back a sense of control and comfort.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+    </div>
+
+    <div class="case-detail" id="caseDetail">
+      <button class="case-back" id="caseBack"><i class="fa-solid fa-arrow-left"></i> All work</button>
+
+      <div class="case-detail-hero" id="caseDetailHero"><img id="caseDetailImg" src="" alt=""></div>
+
+      <h3 class="case-detail-title" id="caseDetailTitle"></h3>
+      <div class="case-detail-colors" id="caseDetailColors"></div>
+      <div class="case-detail-typefaces" id="caseDetailTypefaces"></div>
+      <div class="case-detail-text" id="caseDetailText"></div>
+      <a class="case-figma-link" id="caseFigmaLink" target="_blank" rel="noopener noreferrer" style="display:none">
+        <i class="fa-brands fa-figma"></i> View the Figma prototype
+      </a>
+
+      <div class="case-detail-previews" id="caseDetailPreviews" style="display:none">
+        <span class="case-previews-label">Project previews</span>
+        <div class="case-previews-grid" id="caseDetailPreviewsGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 04 — SKILLS ═══════════════════════ -->
+<section class="skills" id="skills">
+  <div class="section-head section-head--dark reveal">
+    <span class="section-num">04</span>
+    <span class="section-name">Skills</span>
+  </div>
+  <div class="marquee marquee--right">
+    <div class="marquee-track">
+      <span>Figma</span><span>&#9679;</span><span>Adobe Illustrator</span><span>&#9679;</span><span>AI Prompting</span><span>&#9679;</span><span>UI / UX Design</span><span>&#9679;</span><span>Typography</span><span>&#9679;</span><span>Branding</span><span>&#9679;</span>
+      <span>Figma</span><span>&#9679;</span><span>Adobe Illustrator</span><span>&#9679;</span><span>AI Prompting</span><span>&#9679;</span><span>UI / UX Design</span><span>&#9679;</span><span>Typography</span><span>&#9679;</span><span>Branding</span><span>&#9679;</span>
+    </div>
+  </div>
+  <div class="marquee marquee--left">
+    <div class="marquee-track">
+      <span>Visual Identity</span><span>&#9679;</span><span>Responsive Design</span><span>&#9679;</span><span>HTML &amp; CSS</span><span>&#9679;</span><span>Photography</span><span>&#9679;</span><span>Art Direction</span><span>&#9679;</span><span>Storytelling</span><span>&#9679;</span>
+      <span>Visual Identity</span><span>&#9679;</span><span>Responsive Design</span><span>&#9679;</span><span>HTML &amp; CSS</span><span>&#9679;</span><span>Photography</span><span>&#9679;</span><span>Art Direction</span><span>&#9679;</span><span>Storytelling</span><span>&#9679;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 05 — GALLERY ═══════════════════════ -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <span class="section-num">05</span>
+    <span class="section-name">Gallery</span>
+  </div>
+  <h2 class="work-headline reveal">Snapshots from <em>the road</em>.</h2>
+  <p class="work-sub reveal">Photography keeps me observing — here's a little of what I've seen lately.</p>
+
+  <div class="album-grid" id="albumGrid">
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Japan album">
+      <div class="album-slides">
+        <img src="assets/gallery/Japan1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Japan2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan5.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan6.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Japan</span><span>6 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Lake Como album">
+      <div class="album-slides">
+        <img src="assets/gallery/Italy 1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Italy2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy5.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Lake Como</span><span>5 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Korea album">
+      <div class="album-slides">
+        <img src="assets/gallery/Korea1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Korea2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea5.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Korea</span><span>5 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Lake Garda - Nice album">
+      <div class="album-slides">
+        <img src="assets/gallery/100_0035.JPG" class="album-slide active" alt="">
+        <img src="assets/gallery/100_0057.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0104.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0122.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0167.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0235.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0273.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0285.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0366.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0369.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0378.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0381.JPG" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Lake Garda - Nice</span><span>12 photos</span></div>
+    </div>
+  </div>
+
+  <div class="album-detail" id="albumDetail" style="display:none">
+    <button class="case-back" id="albumBack"><i class="fa-solid fa-arrow-left"></i> Albums</button>
+    <h2 class="album-detail-title" id="albumDetailTitle"></h2>
+    <div class="album-photos" id="albumPhotos"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 06 — CONTACT ═══════════════════════ -->
+<section class="contact" id="contact">
+  <div class="section-head section-head--dark reveal">
+    <span class="section-num">06</span>
+    <span class="section-name">Contact</span>
+  </div>
+
+  <h2 class="contact-headline reveal">Available for<br><em>freelance</em> work.</h2>
+  <p class="contact-text reveal">Open to new projects &amp; collaborations. Currently working on a project for
+    <a href="https://www.zuyderland.nl/" target="_blank" rel="noopener noreferrer">Zuyderland</a>.</p>
+
+  <a class="magnetic-btn reveal" data-magnetic href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer">
+    <span>Let's talk</span>
+    <i class="fa-solid fa-arrow-up-right"></i>
+  </a>
+</section>
+
+</main>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <span class="footer-name">RICK PALMEN</span>
+  <p class="footer-credit">Made with Figma&copy;, Visual Studio Code, and a little help from Claude.</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/rick_palmen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.x.com/rick_palmen/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════ LIGHTBOX ═══════════════════════ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
