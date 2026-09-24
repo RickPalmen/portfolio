@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rick Palmen — Visual Designer</title>
+<meta name="description" content="Rick Palmen — Visual designer working across branding, UI/UX and multimedia storytelling.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@0;1&family=Inter:ital,wght@0,300..800;1,300..800&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════ CURSOR ═══════════════════════ -->
+<div class="cursor-cross" id="cursorCross">
+  <span></span><span></span>
+</div>
+
+<!-- ═══════════════════════ PRELOADER ═══════════════════════ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-row">
+    <span class="preloader-name">RICK PALMEN</span>
+    <span class="preloader-pct" id="preloaderPct">00</span>
+  </div>
+  <div class="preloader-bar"><span id="preloaderFill"></span></div>
+</div>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark" data-target="top">
+    <svg class="nav-logo" viewBox="0 0 147 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Rick Palmen" role="img">
+      <path d="M0 43.275V1.27496H12.24V43.275H0ZM29.46 28.275L29.4 29.235H9.48V20.055H22C22.96 20.055 23.8 19.955 24.52 19.755C25.24 19.555 25.84 19.245 26.32 18.825C26.8 18.405 27.16 17.905 27.4 17.325C27.64 16.745 27.76 16.055 27.76 15.255C27.76 14.455 27.64 13.755 27.4 13.155C27.16 12.555 26.8 12.065 26.32 11.685C25.84 11.305 25.24 11.005 24.52 10.785C23.8 10.565 22.96 10.455 22 10.455H9.48V1.27496H24.22C26.7 1.27496 28.93 1.59496 30.91 2.23496C32.89 2.87496 34.55 3.79496 35.89 4.99496C37.23 6.19496 38.25 7.63496 38.95 9.31496C39.65 10.995 40 12.895 40 15.015C40 17.655 39.37 19.965 38.11 21.945C36.85 23.925 35.05 25.475 32.71 26.595C30.37 27.715 32.78 28.275 29.46 28.275ZM17.46 26.595L29.7 24.135L47.16 43.275H32.16L17.46 26.595Z" fill="currentColor"/>
+      <path d="M47.79 4.03496C47.79 2.51496 49.03 1.27496 50.55 1.27496H56.61C58.13 1.27496 59.37 2.51496 59.37 4.03496C59.37 5.55496 58.13 6.79496 56.61 6.79496H50.55C49.03 6.79496 47.79 5.55496 47.79 4.03496ZM47.79 43.275V10.275H59.37V43.275H47.79Z" fill="currentColor"/>
+      <path d="M103.1 21.975L91.7 24.195C91.38 22.875 90.82 21.785 90.02 20.925C89.22 20.065 88.17 19.425 86.87 19.005C85.57 18.585 83.98 18.375 82.1 18.375C80.7 18.375 79.44 18.485 78.32 18.705C77.2 18.925 76.24 19.265 75.44 19.725C74.64 20.185 73.97 20.755 73.43 21.435C72.89 22.115 72.49 22.895 72.23 23.775C71.97 24.655 71.84 25.655 71.84 26.775C71.84 27.895 71.97 28.895 72.23 29.775C72.49 30.655 72.89 31.435 73.43 32.115C73.97 32.795 74.65 33.365 75.47 33.825C76.29 34.285 77.25 34.615 78.35 34.815C79.45 35.015 80.7 35.115 82.1 35.115C84.06 35.115 85.71 34.915 87.05 34.515C88.39 34.115 89.45 33.455 90.23 32.535C91.01 31.615 91.54 30.455 91.82 29.055L103.16 31.215C102.52 33.895 101.28 36.195 99.44 38.115C97.6 40.035 95.22 41.485 92.3 42.465C89.38 43.445 85.98 43.935 82.1 43.935C79.3 43.935 76.75 43.685 74.45 43.185C72.15 42.685 70.1 41.945 68.3 40.965C66.5 39.985 65 38.815 63.8 37.455C62.6 36.095 61.67 34.515 61.01 32.715C60.35 30.915 60.02 28.935 60.02 26.775C60.02 24.615 60.35 22.695 61.01 20.895C61.67 19.095 62.61 17.495 63.83 16.095C65.05 14.695 66.55 13.515 68.33 12.555C70.11 11.595 72.15 10.855 74.45 10.335C76.75 9.81499 79.3 9.55499 82.1 9.55499C85.98 9.55499 89.37 10.025 92.27 10.965C95.17 11.905 97.53 13.305 99.35 15.165C101.17 17.025 102.42 19.295 103.1 21.975Z" fill="currentColor"/>
+      <path d="M103.95 43.275V1.27496H115.41V43.275H103.95ZM109.89 27.195L129.75 10.275H144.69L122.79 27.795L121.71 28.695L113.67 35.475L109.89 27.195ZM113.61 26.475L124.47 22.515L146.01 43.275H130.53L113.61 26.475Z" fill="currentColor"/>
+      <path d="M141.59 6.44499C143.517 6.44499 145.08 5.09736 145.08 3.43499C145.08 1.77261 143.517 0.424988 141.59 0.424988C139.662 0.424988 138.1 1.77261 138.1 3.43499C138.1 5.09736 139.662 6.44499 141.59 6.44499Z" stroke="currentColor" stroke-width="0.85" stroke-miterlimit="10"/>
+      <path d="M140.03 3.35499C140.03 3.19499 140.05 3.05499 140.1 2.91499C140.15 2.78499 140.22 2.66499 140.31 2.55499C140.4 2.45499 140.51 2.36499 140.64 2.28499C140.77 2.21499 140.92 2.15499 141.09 2.11499C141.26 2.07499 141.44 2.05499 141.64 2.05499C141.92 2.05499 142.16 2.08499 142.37 2.15499C142.58 2.22499 142.75 2.32499 142.88 2.44499C143.01 2.56499 143.1 2.73499 143.15 2.92499L142.39 3.07499C142.37 2.97499 142.32 2.89499 142.26 2.82499C142.2 2.75499 142.11 2.70499 142.01 2.67499C141.91 2.63499 141.78 2.62499 141.64 2.62499C141.53 2.62499 141.42 2.63499 141.33 2.65499C141.24 2.67499 141.16 2.70499 141.09 2.74499C141.02 2.78499 140.96 2.83499 140.92 2.89499C140.87 2.95499 140.84 3.01499 140.82 3.09499C140.8 3.17499 140.79 3.25499 140.79 3.35499C140.79 3.45499 140.8 3.53499 140.82 3.61499C140.84 3.69499 140.88 3.75499 140.92 3.81499C140.97 3.87499 141.02 3.92499 141.09 3.95499C141.16 3.99499 141.24 4.02499 141.33 4.03499C141.42 4.05499 141.52 4.06499 141.64 4.06499C141.79 4.06499 141.92 4.04499 142.02 4.01499C142.12 3.97499 142.21 3.92499 142.27 3.85499C142.33 3.78499 142.38 3.69499 142.4 3.59499L143.14 3.73499C143.09 3.93499 143.01 4.09499 142.88 4.23499C142.75 4.36499 142.58 4.46499 142.37 4.53499C142.16 4.60499 141.92 4.63499 141.64 4.63499C141.47 4.63499 141.31 4.62499 141.17 4.59499C141.03 4.56499 140.89 4.52499 140.77 4.47499C140.65 4.42499 140.54 4.35499 140.45 4.28499C140.36 4.21499 140.28 4.12499 140.22 4.02499C140.16 3.92499 140.11 3.82499 140.08 3.70499C140.05 3.58499 140.03 3.46499 140.03 3.33499V3.35499Z" fill="currentColor" stroke="currentColor" stroke-width="0.22" stroke-miterlimit="10"/>
+    </svg>
+  </a>
+  <a href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer" class="nav-cta">
+    <span>Say hi</span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </a>
+  <div class="nav-links">
+    <a href="#about" data-target="about">About</a>
+    <a href="#work" data-target="work">Work</a>
+    <a href="#skills" data-target="skills">Skills</a>
+    <a href="#gallery" data-target="gallery">Gallery</a>
+    <a href="#contact" data-target="contact">Contact</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span></button>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<header class="hero" id="top">
+  <div class="hero-top-row reveal-line">
+    <span>Portfolio&nbsp;/&nbsp;2026</span>
+    <span>Limburg, NL</span>
+  </div>
+
+  <div class="hero-title-wrap">
+    <h1 class="hero-title">
+      <span class="hero-title-line"><span class="hero-title-inner" data-line><img class="hero-title-svg" src="assets/Text.svg" alt="Rick"></span></span>
+      <span class="hero-title-line"><span class="hero-title-inner" data-line><img class="hero-title-svg" src="assets/Text-1.svg" alt="Palmen"></span></span>
+    </h1>
+  </div>
+
+  <div class="hero-portrait reveal">
+    <img src="assets/rick-halftone.png" alt="Halftone portrait of Rick Palmen">
+  </div>
+
+  <div class="hero-bottom-row">
+    <p class="hero-role reveal-line">Visual designer — branding, UI/UX &amp;<br>multimedia storytelling.</p>
+    <a href="#about" class="hero-scroll" data-target="about">
+      <span class="hero-scroll-circle"><i class="fa-solid fa-arrow-down"></i></span>
+      <span class="hero-scroll-label">Scroll</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════ 01 — ABOUT ═══════════════════════ -->
+<section class="about" id="about">
+  <div class="section-head reveal">
+    <span class="section-name">About</span>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="about-lede reveal">
+        Minimal, but <em>purposeful</em>. I bring ideas to life through bold, deliberate design that looks sharp, feels right, and leaves a lasting impression — every project is a small chapter in a bigger story I'm still writing.
+      </p>
+
+      <div class="about-story">
+        <p class="about-graf reveal"><span class="about-drop">23</span> years old, drawn to clean, fitting aesthetics and bold type — <em>calm by nature, curious by habit</em>. I find energy in big cities, matching colour palettes, and the details most people overlook.</p>
+        <p class="about-graf reveal">Introverted by nature, I like to take my time to observe, think, and create — all while staying <em>chronically online</em>, saving inspiration and chasing whatever's next. My dad always told me to do what I love and work hard for it, and <em>I carry that with me</em> into every project.</p>
+      </div>
+    </div>
+
+    <div class="about-photo reveal">
+      <img src="assets/me.jpg" alt="Rick Palmen">
+      <a class="photo-tag" href="https://www.instagram.com/rick_palmen/" target="_blank" rel="noopener noreferrer" aria-label="Rick's Instagram">
+        <i class="fa-brands fa-instagram photo-tag-icon"></i>
+        <span class="photo-tag-label">@rick_palmen</span>
+      </a>
+      <a class="photo-tag photo-tag--david" href="https://davidvonk.github.io/Portfolio-David-Vonk/index.html" target="_blank" rel="noopener noreferrer" aria-label="David Vonk's portfolio">
+        <i class="fa-solid fa-arrow-up-right-from-square photo-tag-icon"></i>
+        <span class="photo-tag-label">David Vonk</span>
+      </a>
+    </div>
+
+    <div class="about-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="10">00</span>
+        <span class="stat-label">Projects<br>shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Tools<br>mastered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num stat-infinity">&#8734;</span>
+        <span class="stat-label">Creativity,<br>always</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 02 — WORK ═══════════════════════ -->
+<section class="work" id="work">
+  <div class="section-head reveal">
+    <span class="section-name">Work</span>
+  </div>
+
+  <h2 class="work-headline reveal">Brand concepts,<br><em>brought to life</em>.</h2>
+  <p class="work-sub reveal">Hover to explore. Click a case study below to read the story.</p>
+
+  <div class="concepts-row" id="conceptsRow">
+    <div class="concept-tile reveal" data-tilt>
+      <img src="assets/Modexa1.jpg" class="img-a" alt="Modexa">
+      <img src="assets/Modexa2.png" class="img-b" alt="Modexa">
+      <span class="concept-name">Modexa</span>
+    </div>
+    <div class="concept-tile reveal" data-tilt>
+      <img src="assets/Solavena1.png" class="img-a" alt="Solavena">
+      <img src="assets/Solavena2.png" class="img-b" alt="Solavena">
+      <span class="concept-name">Solavena</span>
+    </div>
+    <a class="concept-tile concept-tile--dl reveal" data-tilt href="assets/S%26A%20Brandbook.pdf" download="S&amp;A Brandbook.pdf">
+      <img src="assets/S&A1.png" class="img-a" alt="S&amp;A">
+      <img src="assets/S&A2.png" class="img-b" alt="S&amp;A">
+      <span class="concept-dl"><i class="fa-solid fa-file-arrow-down"></i> Brandbook</span>
+      <span class="concept-name">S&amp;A</span>
+    </a>
+    <div class="concept-tile concept-tile--logo reveal" data-tilt>
+      <img src="assets/dsm logo.png" class="img-a" alt="dsm-firmenich">
+      <img src="assets/dsm tabel.png" class="img-b" alt="dsm-firmenich sustainability data">
+      <span class="concept-tag">sustainabilitydata</span>
+      <span class="concept-name">dsm&#8209;firmenich</span>
+    </div>
+  </div>
+
+  <div class="rule reveal"><span>Real&#8209;life projects</span></div>
+
+  <div class="case-wrap">
+    <div class="case-grid" id="caseGrid">
+      <article class="case-card reveal" data-case="ads" tabindex="0" role="button" aria-label="Read the Achter de Schermen case study">
+        <div class="case-img"><img src="assets/Achter De Schermen.png" alt="Achter de Schermen"></div>
+        <div class="case-copy">
+          <h3>Achter de Schermen</h3>
+          <p>Turning CBS raw-material datasets into an interactive multimedia story for a 16–18 audience.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="animo" tabindex="0" role="button" aria-label="Read the Animo case study">
+        <div class="case-img"><img src="assets/animo.png" alt="Animo"></div>
+        <div class="case-copy">
+          <h3>Animo</h3>
+          <p>A reading-app concept for Cubiss — teens discover the books their idols grew up on.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="safari" tabindex="0" role="button" aria-label="Read the Coding Safari case study">
+        <div class="case-img"><img src="assets/codesafari.png" alt="Coding Safari"></div>
+        <div class="case-copy">
+          <h3>Coding Safari</h3>
+          <p>Workshops that introduce teenagers to code as a creative outlet, not just a technical skill.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card reveal" data-case="hein" tabindex="0" role="button" aria-label="Read the Hein's Multimedia Story case study">
+        <div class="case-img"><img src="assets/Hein.png" alt="Hein's Multimedia Story"></div>
+        <div class="case-copy">
+          <h3>Hein's Multimedia Story</h3>
+          <p>Mapping Dutch &amp; Belgian beer exports into an immersive, data-driven narrative.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+      <article class="case-card case-card--wide reveal" data-case="zuyderland" tabindex="0" role="button" aria-label="Read the Zuyderland case study">
+        <div class="case-img case-img--logo"><img src="assets/Zuyderland logo.png" alt="Zuyderland"></div>
+        <div class="case-copy">
+          <h3>Zuyderland</h3>
+          <p>An in-room treatment-light &amp; ambiance system giving hospital patients back a sense of control and comfort.</p>
+          <span class="case-open">Read the story <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </article>
+    </div>
+
+    <div class="case-detail" id="caseDetail">
+      <button class="case-back" id="caseBack"><i class="fa-solid fa-arrow-left"></i> All work</button>
+
+      <div class="case-detail-hero" id="caseDetailHero"><img id="caseDetailImg" src="" alt=""></div>
+
+      <h3 class="case-detail-title" id="caseDetailTitle"></h3>
+      <div class="case-detail-colors" id="caseDetailColors"></div>
+      <div class="case-detail-typefaces" id="caseDetailTypefaces"></div>
+      <div class="case-detail-text" id="caseDetailText"></div>
+      <a class="case-figma-link" id="caseFigmaLink" target="_blank" rel="noopener noreferrer" style="display:none">
+        <i class="fa-brands fa-figma"></i> View the Figma prototype
+      </a>
+
+      <div class="case-detail-previews" id="caseDetailPreviews" style="display:none">
+        <span class="case-previews-label">Project previews</span>
+        <div class="case-previews-grid" id="caseDetailPreviewsGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 03 — SKILLS ═══════════════════════ -->
+<section class="skills" id="skills">
+  <div class="section-head section-head--dark reveal">
+    <span class="section-name">Skills</span>
+  </div>
+  <div class="marquee marquee--right">
+    <div class="marquee-track">
+      <span>Figma</span><span>&#9679;</span><span>Adobe Illustrator</span><span>&#9679;</span><span>AI Prompting</span><span>&#9679;</span><span>UI / UX Design</span><span>&#9679;</span><span>Typography</span><span>&#9679;</span><span>Branding</span><span>&#9679;</span>
+      <span>Figma</span><span>&#9679;</span><span>Adobe Illustrator</span><span>&#9679;</span><span>AI Prompting</span><span>&#9679;</span><span>UI / UX Design</span><span>&#9679;</span><span>Typography</span><span>&#9679;</span><span>Branding</span><span>&#9679;</span>
+    </div>
+  </div>
+  <div class="marquee marquee--left">
+    <div class="marquee-track">
+      <span>Visual Identity</span><span>&#9679;</span><span>Responsive Design</span><span>&#9679;</span><span>HTML &amp; CSS</span><span>&#9679;</span><span>Photography</span><span>&#9679;</span><span>Art Direction</span><span>&#9679;</span><span>Storytelling</span><span>&#9679;</span>
+      <span>Visual Identity</span><span>&#9679;</span><span>Responsive Design</span><span>&#9679;</span><span>HTML &amp; CSS</span><span>&#9679;</span><span>Photography</span><span>&#9679;</span><span>Art Direction</span><span>&#9679;</span><span>Storytelling</span><span>&#9679;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 04 — GALLERY ═══════════════════════ -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <span class="section-name">Gallery</span>
+  </div>
+  <h2 class="work-headline reveal">Snapshots from <em>the road</em>.</h2>
+  <p class="work-sub reveal">Photography keeps me observing — here's a little of what I've seen lately.</p>
+
+  <div class="album-grid" id="albumGrid">
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Japan album">
+      <div class="album-slides">
+        <img src="assets/gallery/Japan1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Japan2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan5.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Japan6.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Japan</span><span>6 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Lake Como album">
+      <div class="album-slides">
+        <img src="assets/gallery/Italy 1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Italy2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Italy5.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Lake Como</span><span>5 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Korea album">
+      <div class="album-slides">
+        <img src="assets/gallery/Korea1.jpg" class="album-slide active" alt="">
+        <img src="assets/gallery/Korea2.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea3.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea4.jpg" class="album-slide" alt="">
+        <img src="assets/gallery/Korea5.jpg" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Korea</span><span>5 photos</span></div>
+    </div>
+    <div class="album-card reveal" tabindex="0" role="button" aria-label="Open Lake Garda - Nice album">
+      <div class="album-slides">
+        <img src="assets/gallery/100_0035.JPG" class="album-slide active" alt="">
+        <img src="assets/gallery/100_0057.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0104.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0122.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0167.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0235.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0273.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0285.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0366.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0369.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0378.JPG" class="album-slide" alt="">
+        <img src="assets/gallery/100_0381.JPG" class="album-slide" alt="">
+      </div>
+      <div class="album-info"><span class="album-name">Lake Garda - Nice</span><span>12 photos</span></div>
+    </div>
+  </div>
+
+  <div class="album-detail" id="albumDetail" style="display:none">
+    <button class="case-back" id="albumBack"><i class="fa-solid fa-arrow-left"></i> Albums</button>
+    <h2 class="album-detail-title" id="albumDetailTitle"></h2>
+    <div class="album-photos" id="albumPhotos"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ 05 — CONTACT ═══════════════════════ -->
+<section class="contact" id="contact">
+  <div class="section-head section-head--dark reveal">
+    <span class="section-name">Contact</span>
+  </div>
+
+  <h2 class="contact-headline reveal">Available for<br><em>freelance</em> work.</h2>
+  <p class="contact-text reveal">Open to new projects &amp; collaborations. Currently working for
+    <a href="#" target="_blank" rel="noopener noreferrer">?</a>.</p>
+
+  <a class="magnetic-btn reveal" data-magnetic href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer">
+    <span>Let's talk</span>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </a>
+</section>
+
+</main>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <span class="footer-name">RICK PALMEN</span>
+  <p class="footer-credit">Made with Figma&copy;, Visual Studio Code, and a little help from Claude.</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/rick_palmen/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.x.com/rick_palmen/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/rick-palmen-8b2475226/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════ LIGHTBOX ═══════════════════════ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
